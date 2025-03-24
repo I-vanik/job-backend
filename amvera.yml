@@ -5,7 +5,7 @@ meta:
     name: browser
     version: "22"
 build:
-  additionalCommands: npm start
+  additionalCommands: 
   artifacts:
     MONGODB_URL: mongodb+srv://admin:1111@cluster0.rh4pp.mongodb.net/blog?retryWrites=true&w=majority&appName=Cluster0
 run: {}
