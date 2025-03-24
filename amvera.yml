@@ -3,7 +3,7 @@ meta:
   environment: node
   toolchain:
     name: browser
-    version: "18"
+    version: "22"
 build:
   additionalCommands: npm start
   artifacts:
