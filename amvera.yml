@@ -1,0 +1,11 @@
+version: null
+meta:
+  environment: node
+  toolchain:
+    name: browser
+    version: "18"
+build:
+  additionalCommands: npm start
+  artifacts:
+    MONGODB_URL: mongodb+srv://admin:1111@cluster0.rh4pp.mongodb.net/blog?retryWrites=true&w=majority&appName=Cluster0
+run: {}
