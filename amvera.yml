@@ -1,11 +1,24 @@
-version: null
 meta:
   environment: node
   toolchain:
-    name: browser
-    version: "22"
-build:
-  additionalCommands: 
-  artifacts:
-    MONGODB_URL: mongodb+srv://admin:1111@cluster0.rh4pp.mongodb.net/blog?retryWrites=true&w=majority&appName=Cluster0
-run: {}
+    name: npm
+    version: 18
+
+run:
+  scriptName: index.js
+  containerPort: 4444
+
+
+
+
+# version: null
+# meta:
+#   environment: node
+#   toolchain:
+#     name: browser
+#     version: "22"
+# build:
+#   additionalCommands: 
+#   artifacts:
+#     MONGODB_URL: mongodb+srv://admin:1111@cluster0.rh4pp.mongodb.net/blog?retryWrites=true&w=majority&appName=Cluster0
+# run: {}
