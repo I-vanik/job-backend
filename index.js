@@ -13,11 +13,11 @@ import { UserController, PostController } from './controllers/index.js';
 
 mongoose.set('strictQuery', false);
 mongoose
-  .connect("mongodb+srv://admin:1111@cluster0.rh4pp.mongodb.net/blog?retryWrites=true&w=majority&appName=Cluster0")
+  .connect(process.env.MONGODB_URL)
   .then(() => console.log('DB ok'))
   .catch((err) => console.log('DB error', err));
 
-  
+   
 const app = express();
 
 const storage = multer.diskStorage({
