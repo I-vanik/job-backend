@@ -13,7 +13,7 @@ import { UserController, PostController } from './controllers/index.js';
 
 mongoose.set('strictQuery', false);
 mongoose
-  .connect(process.env.MONGODB_URL)
+  .connect('mongodb+srv://admin:1111@cluster0.rh4pp.mongodb.net/blog?retryWrites=true&w=majority&appName=Cluster0')
   .then(() => console.log('DB ok'))
   .catch((err) => console.log('DB error', err));
 
@@ -63,7 +63,7 @@ app.patch(
   PostController.update,
 );
 
-app.listen(process.env.PORT || 4444, (err) => {
+app.listen( 4444, (err) => {
   if (err) {
     return console.log(err);
   }
